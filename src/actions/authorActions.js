@@ -1,11 +1,11 @@
 "use strict";
 
 var Dispatcher = require('../dispatcher/appDispatcher');
-var AuthorApi = require('../api/AuthorApi');
+var AuthorApi = require('../api/authorApi');
 var ActionTypes = require('../constants/actionTypes');
 
 
-var AuthorAction = {
+var AuthorActions = {
     createAuthor: function(author) {
         var newAuthor = AuthorApi.saveAuthor(author);
 
