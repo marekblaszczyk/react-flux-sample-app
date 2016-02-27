@@ -5,7 +5,7 @@ var authors = require('./authorData').authors;
 var _ = require('lodash');
 
 //This would be performed on the server in a areal app. Just stubbing in.
-var _generatedId = function(author) {
+var _generateId = function(author) {
     return author.firstName.toLowerCase() + '-' + author.lastName.toLowerCase();
 };
 
